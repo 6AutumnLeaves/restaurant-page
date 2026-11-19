@@ -1,8 +1,11 @@
+import "./menu-theme.css"
+
 export function loadMenu() {
     const content = document.querySelector("#content");
-    content.replaceChildren();
 
     const menuContainer = document.createElement("div");
+
+    menuContainer.classList.add("menu-page");
 
     const heading = document.createElement("h1");
     heading.textContent = "Our Menu";

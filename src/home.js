@@ -1,7 +1,8 @@
 export function loadHome() {
 	const content = document.querySelector("#content");
-	content.replaceChildren();
 	
+	const homeContainer = document.createElement("div");
+
 	const heading = document.createElement("h1");
 	heading.textContent = "The Adventurer's Tavern";
 
@@ -9,7 +10,8 @@ export function loadHome() {
 	paragraph.textContent = "Welcome, weary traveler! Enjoy delicious food, good company, and a little magic.";
 
 	
-	content.appendChild(heading);
-	content.appendChild(paragraph);
+	homeContainer.appendChild(heading);
+	homeContainer.appendChild(paragraph);
+	content.appendChild(homeContainer);
 }
 

@@ -1,6 +1,5 @@
 export function loadContact() {
     const content = document.querySelector("#content");
-    content.replaceChildren();
 
     const contactContainer = document.createElement("div");
 

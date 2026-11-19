@@ -27,6 +27,11 @@ nav {
     transition: .3s;
 }
 
+.button:focus-visible {
+    outline: 3px solid #e3bd77;
+    outline-offset: 4px;
+}
+
 #content {
     display:flex;
     justify-content: center;
